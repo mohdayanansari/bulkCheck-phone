@@ -103,7 +103,7 @@ const Home = ({ logedIn, setLogedIn }) => {
               } rounded-md h-[50px] p-[10px] flex justify-center items-center w-1/2 font-bold transition-all duration-300 transform ease-linear`
             }
           >
-            Something
+            Download Group List
           </Tab>
         </Tab.List>
         <Tab.Panels>
@@ -172,7 +172,7 @@ const Home = ({ logedIn, setLogedIn }) => {
               onChange={handleOnChange}
             /> */}
                   <div className="btn-container">
-                    <p className="text">Upload only 100 contacts per CSV</p>
+                    {/* <p className="text">Upload only 100 contacts per CSV</p> */}
                     <button
                       onClick={bulkSend}
                       disabled={!isVerified}
