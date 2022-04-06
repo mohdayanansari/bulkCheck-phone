@@ -22,6 +22,8 @@ const Home = ({ logedIn, setLogedIn }) => {
   const navigate = useNavigate();
   // Google captcha State
   const [isVerified, setIsVerified] = useState(false);
+  // Bulk Show Data
+  const [dataWhatsApp, setDataWhatsApp] = useState();
 
   const checkLogin = () => {
     if (logedIn === false) {
@@ -40,22 +42,26 @@ const Home = ({ logedIn, setLogedIn }) => {
 
   const bulkSend = async (e) => {
     e.preventDefault();
-    console.log(bulkPhone);
     setLoading(true);
     var id = "id" + Math.random().toString(16).slice(2);
     // let ids = crypto.randomBytes(16).toString("hex");
     let formData = new FormData();
     formData.append("file", bulkPhone);
+    formData.append("phone", PhoneValue);
+
+    // const finalData = formData
 
     try {
       const url = "http://143.244.136.108:5006/addingroups";
+      console.log(PhoneValue);
+
       await axios({
         url: url,
         method: "POST",
         headers: {
           authorization: id,
         },
-        data: { formData, phone: PhoneValue },
+        data: formData,
       })?.then((Response) => {
         setBulkData(Response);
         console.log(Response);
@@ -78,6 +84,23 @@ const Home = ({ logedIn, setLogedIn }) => {
     headers: headers,
     data: data,
   };
+
+  // !=======================================================================
+  //* Fetching data and making it into csv format:::
+  const bulkGET = async () => {
+    try {
+      const response = await axios.get("http://143.244.136.108:5006/allgroups");
+      // setLoading(false);
+      // console.log(response);
+      setDataWhatsApp(response);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    // console.log("⚠️⚠️::BULK SHOW TAB::⚠️⚠️");
+    bulkGET();
+  }, []);
 
   return (
     <>
@@ -181,14 +204,13 @@ const Home = ({ logedIn, setLogedIn }) => {
                     >
                       {/* {isVerified ? "" : "Please Check reCAPTCHA"} */}
                       {loading ? <ClipLoader color="#ffffff" /> : ""}
-                      {isVerified && !loading
-                        ? "Check"
-                        : "Fill required details!"}
+                      {isVerified && !loading ? "Check" : ""}
+                      {!isVerified && "Fill required details!"}
                     </button>
                   </div>
                 </form>
                 <div>
-                  {show === true && (
+                  {/* {show === true && (
                     <div className="flex justify-center mt-5">
                       <CSVLink
                         {...csvReport}
@@ -197,7 +219,7 @@ const Home = ({ logedIn, setLogedIn }) => {
                         Download List
                       </CSVLink>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
@@ -205,7 +227,7 @@ const Home = ({ logedIn, setLogedIn }) => {
           {/* ====================================================== */}
           {/* Tab---2 */}
           <Tab.Panel>
-            <ShowData />
+            <ShowData  data={dataWhatsApp}/>
           </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
