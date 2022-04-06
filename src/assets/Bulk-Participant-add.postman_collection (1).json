@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "4ddd49e8-40a6-4378-a320-9581e640aa07",
+		"name": "Bulk-Participant-add",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "status of server",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "143.244.136.108:5006",
+					"host": [
+						"143",
+						"244",
+						"136",
+						"108"
+					],
+					"port": "5006"
+				}
+			},
+			"response": [
+				{
+					"name": "status of server",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "143.244.136.108:5006",
+							"host": [
+								"143",
+								"244",
+								"136",
+								"108"
+							],
+							"port": "5006"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Apr 2022 13:23:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						}
+					],
+					"cookie": [],
+					"body": "Application is Up !!!! 2.0.0"
+				}
+			]
+		},
+		{
+			"name": "all groups with chatids",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "143.244.136.108:5006/allgroups",
+					"host": [
+						"143",
+						"244",
+						"136",
+						"108"
+					],
+					"port": "5006",
+					"path": [
+						"allgroups"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "all groups with chatids",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "143.244.136.108:5006/allgroups",
+							"host": [
+								"143",
+								"244",
+								"136",
+								"108"
+							],
+							"port": "5006",
+							"path": [
+								"allgroups"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Apr 2022 13:26:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34206"
+						}
+					],
+					"cookie": [],
+					"body": "{\"First4 (PIAS Khidir)\": \"120363040885514523@g.us\", \"CGP Volunteer Community\": \"6592776977-1604819319@g.us\", \"Floorball Secret Society\": \"6591761192-1394429791@g.us\", \"First 4 Accounting(Annie)\": \"120363041618571566@g.us\", \"First 4 accounting\": \"6591126820-1627874769@g.us\", \"Thaqif Haters Club \\ud83c\\udf43\": \"6598557545-1480084653@g.us\", \"JonasXAnton EDM\": \"120363024953158345@g.us\", \"First4 (PRU Daniel)\": \"120363041281254298@g.us\", \"Floorball LHMC/CMC\": \"6597109421-1466577989@g.us\", \"Group with -\": \"6593862012-1583837266@g.us\", \"First 4 sales group\": \"6591126820-1621301867@g.us\", \"JJ X F4 Management\": \"6593862012-1630730380@g.us\", \"FRIDAY FLOORBALL ON BREAK\": \"120363040173984687@g.us\", \"Tues Floorball 8.30-10pm\": \"6598500421-1450768513@g.us\", \"FIRST4 X AVIVA Ryan\": \"6591126820-1621416945@g.us\", \"Rabak fellas\": \"6596413635-1599036383@g.us\", \"Test dep Group detash2\": \"120363023564587462@g.us\", \"testttt\": \"120363040374110066@g.us\", \"First 4 Facebook ads\": \"6591126820-1625983955@g.us\", \"JonasXGeorgetest EDM\": \"120363022643448418@g.us\", \"testnewformat\": \"120363043688094738@g.us\", \"First 4 Website Cindy\": \"120363042449505817@g.us\", \"Shi Xin AIA Website\": \"120363042355939428@g.us\", \"Ernest x F4 management\": \"120363038868829628@g.us\", \"Sausage fest \\ud83c\\udf2d\": \"6596413635-1634291037@g.us\", \"First 4 (PIAS KaiHin)\": \"120363039176368056@g.us\", \"George x F4 Management\": \"6591126820-1630573612@g.us\", \"First 4 Ops\": \"6591126820-1622017559@g.us\", \"Coco X F4 Management\": \"6593862012-1630730313@g.us\", \"FIRST4\": \"6591126820-1600407623@g.us\", \"First4 (PRU) Robert \": \"6596413635-1633059716@g.us\", \"First 4 Lead Gen x Darren\": \"120363041665115782@g.us\", \"Gim Teng X Jonas EDM\": \"120363023328720642@g.us\", \"First4 (PRU Pin Chen)\": \"120363040243500758@g.us\", \"Beyond X First4\": \"6593862012-1604033471@g.us\", \"First 4 Website McCarthy\": \"120363022327281268@g.us\", \"First 4 (AVIVA Magdalene)\": \"120363038777474568@g.us\", \"George1231456 X Jonas EDM\": \"120363039046786870@g.us\", \"JJ Group Test\": \"120363042005397847@g.us\", \"JJ Group\": \"120363039620256251@g.us\", \"Developer X John\": \"120363042304360625@g.us\", \"unknown subject\": \"120363023825321640@g.us\", \"Developer X George Ng\": \"120363021317203966@g.us\", \"CHARLIE P3 Supper Club\": \"6597522194-1498744089@g.us\", \"Wednesday Floorball\": \"6596788981-1430671262@g.us\", \"First 4 x Dropship\": \"120363037681833059@g.us\", \"NFT META ELITE GROUP\": \"120363040695786903@g.us\", \"Close Acquaintances \\ud83d\\udc40\": \"120363042253562116@g.us\", \"Facebook Lead Gen Pages\": \"120363024199495287@g.us\", \"WhatsApp bot\": \"120363043055938192@g.us\", \"First 4 (AXA Terence)\": \"120363022135379555@g.us\", \"Testing group no #48\": \"120363023793753552@g.us\", \"NOTbot\": \"120363042054279540@g.us\", \"First4 (PRU) Veronica\": \"6596413635-1633935822@g.us\", \"f1\": \"120363039598947545@g.us\", \"T_st1\": \"120363023492602002@g.us\", \"Johnson\\u2019s project\": \"6591126820-1611396040@g.us\", \"george123123 X Jonas EDM\": \"120363022286462244@g.us\", \"george123124 X Jonas EDM\": \"120363038235017102@g.us\", \"#Halalb0is\": \"6583219002-1430097361@g.us\", \"gayboygeorgy2 X Jonas EDM\": \"120363023686865884@g.us\", \"Gayboygeorgy2 X Jonas EDM\": \"120363023327846721@g.us\", \"Gaygeorgy X Jonas EDM\": \"120363040097968213@g.us\", \"Gaygeorge9 X Jonas EDM\": \"120363041213561277@g.us\", \"wang232 X Jonas EDM\": \"120363021592616077@g.us\", \"george12345 X Jonas EDM\": \"120363041862758568@g.us\", \"Georgexxxx X Jonas EDM\": \"120363042596792175@g.us\", \"58 X Jonas EDM\": \"120363039065474534@g.us\", \"55 X Jonas EDM\": \"120363042164946003@g.us\", \"56 X Jonas EDM\": \"120363022528750608@g.us\", \"20 X Jonas EDM\": \"120363039415280872@g.us\", \"60 X Jonas EDM\": \"120363041469142768@g.us\", \"37 X Jonas EDM\": \"120363039520073682@g.us\", \"57 X Jonas EDM\": \"120363039674979742@g.us\", \"25 X Jonas EDM\": \"120363024893856343@g.us\", \"21 X Jonas EDM\": \"120363024507203172@g.us\", \"31 X Jonas EDM\": \"120363043093285296@g.us\", \"39 X Jonas EDM\": \"120363022017531976@g.us\", \"wang123 X Jonas EDM\": \"120363038400390151@g.us\", \"Ernestchua123 X Jonas EDM\": \"120363039825579841@g.us\", \"gaygeorge6 X Jonas EDM\": \"120363022879621869@g.us\", \"gaygeorge4 X Jonas EDM\": \"120363039349391237@g.us\", \"gaygeorge3 X Jonas EDM\": \"120363042027016731@g.us\", \"Georgegay2 X Jonas EDM\": \"120363024359873059@g.us\", \"Wang Piao X Jonas EDM\": \"120363041820922887@g.us\", \"ernest X Jonas EDM\": \"120363037803822735@g.us\", \"Georgeng X Jonas EDM\": \"120363042021520212@g.us\", \"Whatsup2\": \"120363023384713692@g.us\", \"Jonas X ErnestChua\": \"120363041195732342@g.us\", \"George X ErnestChua\": \"120363041669235267@g.us\", \"gaygeorge\": \"120363023446322419@g.us\", \"First 4 (AXA Delphine)\": \"120363022835301963@g.us\", \"George Gro123gg\": \"120363039253931689@g.us\", \"First 4 marketing-kenley\": \"120363040925647669@g.us\", \"Wang Piao X First 4\": \"120363025550272203@g.us\", \"First4 x Wei Xuan\": \"120363021674223828@g.us\", \"George Gro\": \"120363040768910019@g.us\", \"Test dep Group detash\": \"120363040761382377@g.us\", \"Crm details\": \"120363040585366528@g.us\", \"First4 (PRU) Min Min\": \"6596413635-1634129445@g.us\", \"Vinson Website CRM\": \"120363021529237749@g.us\", \"First 4 (PRU Alvin)\": \"120363036989761304@g.us\", \"...\": \"6590263093-1455776571@g.us\", \"Jin Yuan Website\": \"120363021885950273@g.us\", \"Alastair AIA Website\": \"120363041336623680@g.us\", \"TEAMABLE SENIORS \\ud83d\\udc69\\ud83c\\udffd\\u200d\\ud83d\\ude80\\ud83d\\udc6e\\ud83c\\udffb\\u200d\\u2640\\ud83d\\udc69\\ud83c\\udffd\\u200d\\ud83d\\ude92\\ud83d\\udc69\\ud83c\\udffb\\u200d\\ud83d\\udcbc\\ud83d\\udc68\\ud83c\\udfff\\u200d\\ud83d\\udcbc\\ud83d\\udc68\\ud83c\\udffb\\u200d\\u2708\\ud83d\\udc69\\ud83c\\udffb\\u200d\\ud83c\\udf3e\\ud83d\\udc69\\ud83c\\udffc\\u200d\\u2695\": \"6591714050-1410930313@g.us\", \"Chatbot Development\": \"120363023685101158@g.us\", \"apna <> Surepass\": \"120363022841656241@g.us\", \"test s123\": \"120363041975871529@g.us\", \"Dufil onboarding\": \"120363022986520974@g.us\", \"test s\": \"120363023128209208@g.us\", \"te\": \"120363024225184382@g.us\", \"test singaporeue\": \"120363022958024690@g.us\", \"test singaporee\": \"120363042548379645@g.us\", \"test singaporeeh\": \"120363040908976491@g.us\", \"test singap\": \"120363041187222832@g.us\", \"test singa\": \"120363041408059315@g.us\", \"test 123\": \"120363039190934928@g.us\", \"Royalti Wati\": \"120363022853868545@g.us\", \"X Jonas\": \"120363038526018967@g.us\", \"Golf bruh\": \"6597587000-1581733297@g.us\", \" Charlie P3S3\\ud83d\\udd25\\ud83e\\udd47\\ud83d\\udd1d\": \"6596407502-1490496912@g.us\", \"Khalid\": \"6583221820-1532594521@g.us\", \"LINEAR GUIDE LABBB\": \"6591116024-1539311678@g.us\", \"Ramen workshop 20/10 :D\": \"6597518000-1539918347@g.us\", \"Teambuilding team\\ud83d\\udcaa\\ud83c\\udffb\": \"6591126828-1533608194@g.us\", \"Sch 1 KAH SDO Reporting\": \"6597325277-1514306132@g.us\", \"Dragon BCCT\": \"6594894033-1508483329@g.us\", \"03/18 MPS\": \"6597651977-1529461432@g.us\", \"BMTC Scrubs\": \"6592269641-1504694982@g.us\", \"Online Bett Accounts_036d\": \"79055724271-1524525004@g.us\", \"Tonight \\ud83e\\udd22\": \"6593832992-1524195707@g.us\", \"Fabian burstdayyy\": \"6596549609-1523458254@g.us\", \"Cook House duty 9-12 apr\": \"6593862012-1522994212@g.us\", \"APR DE COOKHOUSE \": \"6597977397-1522734985@g.us\", \"BMTC Games Day Cap\\u2019s Ball\": \"6585229121-1522051382@g.us\", \"Weapon VORE SMUT\": \"6593862012-1520485018@g.us\", \"SDC LINK UP\": \"6593862012-1519832804@g.us\", \"BMT\": \"6592269641-1505483734@g.us\", \"Tango Maple\": \"6592368214-1496678070@g.us\", \"GRYPHONS 2018\": \"6598291886-1509284958@g.us\", \"AARM SCH 1\": \"6588767376-1508138627@g.us\", \"Ben the Dog \\ud83d\\udc36\": \"6594896785-1393319890@g.us\", \"BMTC SCH 1 UIP\": \"6582236058-1507620398@g.us\", \"04/17 BMTC RE Conducting\": \"6581212469-1511714131@g.us\", \"Meda shit\": \"6596996390-1456555164@g.us\", \"PRBI DE on 271017\": \"6584821150-1508818739@g.us\", \"1-9PAW PP [273]\": \"6592717252-1407755432@g.us\", \"1-14ZMD KWM [727]\": \"6592310844-1416562879@g.us\", \"Efloorball Orders (Temp)\": \"6598768398-1506863140@g.us\", \"Pick up sluts\": \"6597522194-1504980872@g.us\", \"CHEERS\": \"6597274503-1504846141@g.us\", \"Journey to BMT\": \"6592314119-1485080096@g.us\", \"JJ Group Test 4\": \"120363039961799188@g.us\", \"P1 Alcoholics\": \"6590021663-1533680276@g.us\", \"333e\": \"6590021663-1535260987@g.us\", \"Bedok kia 2.0\": \"6590046786-1569985443@g.us\", \"Dec-Leadership-NH741\": \"6590052360-1575555036@g.us\", \"0-00 LEISURE PARK\": \"6590054502-1430295167@g.us\", \"Ex Burhan\": \"6590107662-1501074965@g.us\", \"First 4 (IPP Liana)\": \"120363039987319696@g.us\", \"Christ family\": \"2349156043086-1621703910@g.us\", \"Lifeworks Inc.\": \"6590251637-1386220256@g.us\", \"Lucy rose Charlie lim\": \"6590251637-1394468096@g.us\", \"\\ud83d\\udeb2\": \"6590251637-1459689201@g.us\", \"Vegg\": \"6590251637-1465225090@g.us\", \"????\": \"6590251637-1492829575@g.us\", \"D gn gdgn gdF\": \"6590251637-1596707923@g.us\", \"Ballers \\ud83c\\udf52\": \"6590276726-1490950672@g.us\", \"Fucked Up Personnels\": \"6590276726-1494152770@g.us\", \"YFC Lab Group\": \"6590297660-1590574774@g.us\", \"ACE Intern\": \"6590303016-1568785802@g.us\", \"Tricks\": \"120363040086847149@g.us\", \"Dragon Coy Platoon 1 \\ud83d\\udc09\\ud83d\\udc09\": \"6590514239-1529843969@g.us\", \"\\ud83d\\udd4c Regiment Melayu \\ud83d\\udd4b\": \"6590626563-1498104730@g.us\", \"Year2Niggas\": \"6590910843-1535957592@g.us\", \"Burnsomefats\\ud83c\\udff8\": \"6590910843-1567950214@g.us\", \"SIT MDME 17 \": \"6590923971-1504683476@g.us\", \"Mechatronics Lab\": \"6590923971-1580955946@g.us\", \"FOF PROJECT\": \"6590936008-1402637753@g.us\", \"DINZ\": \"6590936008-1427521826@g.us\", \"OVERNIGHT MADNESS \\ud83d\\ude31\\ud83d\\udc7b\": \"6590936008-1440257216@g.us\", \"FC Dare\": \"6591056196-1406859462@g.us\", \"DARE TO DOTA\": \"6591056196-1408540843@g.us\", \"SPARTAN YCK 27/4 CREW\": \"6591057299-1554303135@g.us\", \"test4\": \"120363022137898671@g.us\", \"Irfan X Ernest\": \"120363022214156694@g.us\", \"Cust\": \"6591111605-1410080265@g.us\", \"Mae CUST \": \"6591111605-1412166291@g.us\", \"Drinking/Wholesome buds \\ud83c\\udf7b\": \"6591126820-1444990650@g.us\", \"Janice\\u2019s project\": \"6591126820-1599371235@g.us\", \"First4 - Pru(AX5)\": \"6591126820-1599731785@g.us\", \"Jiang Hao Project\": \"6591126820-1600165719@g.us\", \"First 4 x E3 Learning\": \"6591126820-1603515555@g.us\", \"Jane\\u2019s Tuition Project\": \"6591126820-1603867628@g.us\", \"FIRST 4x Dominick\": \"6591126820-1615778088@g.us\", \"AIA Firdaus Project\": \"6591126820-1616980473@g.us\", \"AIA Albee x First 4\": \"6591126820-1618561148@g.us\", \"FIRST 4- admin\": \"6591126820-1620965336@g.us\", \"First 4 Website Zhen Jie\": \"120363022980289577@g.us\", \"First 4 ( Wei Xiang )\": \"6591126820-1623167006@g.us\", \"FIRST 4 X TEAM RAMESH\": \"6591126820-1623410623@g.us\", \"First  4 ( Javen )\": \"6591126820-1624688588@g.us\", \"First 4 administration\": \"6591126820-1626100836@g.us\", \"Brian Aviva x First 4\": \"6591126820-1628069439@g.us\", \"Lino Lada Brand Team\": \"6591126820-1632723575@g.us\", \"Lino Lada Growth Team\": \"6591126820-1632724096@g.us\", \"Lino lada marketing\": \"6591126820-1633172296@g.us\", \"blueman journey\": \"6591126820-1634978969@g.us\", \"Kaylea internship x First\": \"6591126820-1636343748@g.us\", \"De Moissa INTERNAL\": \"6591126820-1636343818@g.us\", \"George Group\": \"120363041413912071@g.us\", \"Highest Lifeform\": \"6591137865-1476280612@g.us\", \"Universal United\": \"6591148822-1392292545@g.us\", \"G1\": \"120363022486053430@g.us\", \"3 meals a day\": \"120363019519903319@g.us\", \"JJ Group Test 3\": \"120363024967142454@g.us\", \"Eagles old timers\": \"6591249188-1399071274@g.us\", \"First 4 (Sharon)\": \"120363023023515792@g.us\", \"ICG 19' Floorball\\ud83c\\udfc6\": \"6591429763-1545532218@g.us\", \"Sp floorball cubs\": \"6591506524-1372733491@g.us\", \"R.I.B\": \"6591518304-1375438563@g.us\", \"106/16 Dota wing\": \"6591692978-1493391914@g.us\", \"Sg floorball open team\": \"6581133585-1553429554@g.us\", \"First 4 Website Johnny\": \"120363040714056403@g.us\", \"First 4 (Richmond)\": \"6591777582-1620731406@g.us\", \"First 4 (GEFA Benny)\": \"6591777582-1620806102@g.us\", \"First 4 (Meteor)\": \"6591777582-1621401514@g.us\", \"First 4 (GE Alvin)\": \"6596551905-1627382232@g.us\", \"First 4 (Prudential Ben)\": \"6591777582-1621575456@g.us\", \"First 4 (AIA Jennifer)\": \"6591777582-1621763491@g.us\", \"First 4 (Pru Javier)\": \"6591777582-1621836095@g.us\", \"First 4 (Manulife Jason)\": \"6591777582-1621916464@g.us\", \"First 4 (Prudential PS)\": \"6591777582-1621923255@g.us\", \"First 4 (Pru Joash)\": \"6591777582-1622117392@g.us\", \"First 4 (Pru Rachel)\": \"6591777582-1622528994@g.us\", \"First 4 (Pru Najihah)\": \"6591777582-1622543419@g.us\", \"First 4 (Pru Szer)\": \"6591777582-1622963826@g.us\", \"First 4 (Manulife Chris)\": \"6591777582-1623045392@g.us\", \"First 4 (GE RuiLiang)\": \"6591777582-1623144190@g.us\", \"First 4 (Pru Jon)\": \"6591777582-1623149416@g.us\", \"First 4 (Legacy Wilson)\": \"6591777582-1623219539@g.us\", \"First 4 (Pru Zoe)\": \"6591777582-1623219603@g.us\", \"First 4 (Pru Pei Yi\\u2019s)\": \"6591777582-1623386339@g.us\", \"First 4 (PRU Eric Kusumo)\": \"6591777582-1623549934@g.us\", \"First 4 (Pru Tyanne)\": \"6591777582-1623659774@g.us\", \"First 4 (Pru Elex)\": \"6591777582-1623660085@g.us\", \"First 4 (Pru WeiBin)\": \"6591777582-1623830386@g.us\", \"First 4 (AIA Zowie)\": \"6591777582-1623837098@g.us\", \"First 4 (AIA Arielle)\": \"6591777582-1623932587@g.us\", \"First 4 (Aviva Louis Foo)\": \"6591777582-1624197706@g.us\", \"First 4 (AIA Jun Wen)\": \"6591777582-1624587399@g.us\", \"First 4 (AIA Cindy)\": \"6591777582-1624674828@g.us\", \"First 4 (GE Ivan Wee)\": \"6591777582-1624770392@g.us\", \"First 4 (PRU Carina)\": \"6591777582-1624873723@g.us\", \"First 4 (AIA Victor)\": \"6591777582-1624945812@g.us\", \"First 4 Pru Diana\\u2019s Team\": \"6591777582-1625026948@g.us\", \"First 4 (TokioM Nicholas)\": \"6591777582-1625219530@g.us\", \"First 4 (PRU Sean Chai)\": \"6591777582-1625237969@g.us\", \"First 4 (Manu Winarto)\": \"6591777582-1625892415@g.us\", \"First 4 (IFA Xuan)\": \"6591777582-1625913343@g.us\", \"First 4 (Tokio M Dixon)\": \"6591777582-1626078877@g.us\", \"First 4 (GE Tian Wee)\": \"6591777582-1626159228@g.us\", \"First 4 (Manulife Willy)\": \"6591777582-1626257404@g.us\", \"First 4 (AIA Cindy Loh)\": \"6591777582-1626267967@g.us\", \"First 4 (GE Victor Chin)\": \"6591777582-1626322026@g.us\", \"First 4 (GEFA Deep)\": \"6591777582-1626342169@g.us\", \"First 4 (AIA Jeremy)\": \"6591777582-1626672278@g.us\", \"First 4 (AVIVA Shuan Tze)\": \"6591777582-1626844113@g.us\", \"First 4 (PRU Tuck Choy)\": \"6591777582-1626844212@g.us\", \"First4 (AIA Aisyah)\": \"6591777582-1627135295@g.us\", \"First 4 (PRU Audrey)\": \"6591777582-1627284308@g.us\", \"First 4 (PRU Bernard)\": \"6591777582-1627466188@g.us\", \"First 4 (PRU CASEY)\": \"6591777582-1627551041@g.us\", \"First 4 (AIA Amaryllis)\": \"6591777582-1627715844@g.us\", \"First 4 Hawker Initatives\": \"6591777582-1627929106@g.us\", \"First 4 (PRU Angeline)\": \"6591777582-1628052046@g.us\", \"First 4 (PRU Nigel)\": \"6591777582-1628069886@g.us\", \"First 4 (PRU Wei Xiang)\": \"6591777582-1628565715@g.us\", \"First 4 (PRU Christine)\": \"6591777582-1628824168@g.us\", \"First 4 (PRU Giselle)\": \"6591777582-1629197247@g.us\", \"First 4 (Chef Wang)\": \"6591777582-1629210255@g.us\", \"First 4 (Drivers)\": \"6591777582-1629287714@g.us\", \"First 4 (PRU Nadya)\": \"6591777582-1629553242@g.us\", \"First 4 (PRU Dalston)\": \"6591777582-1630308120@g.us\", \"First 4 (PRU Rayson)\": \"6591777582-1630817051@g.us\", \"First 4 (IAM Serena Julia\": \"6591777582-1630988388@g.us\", \"First 4 (GE Belvia)\": \"6591777582-1631578345@g.us\", \"First 4 (AXA Agnes)\": \"6591777582-1632149848@g.us\", \"First 4 x Lino Lada\": \"6591777582-1632497629@g.us\", \"FIRST 4 (PRU Nadiah)\": \"6591777582-1633162605@g.us\", \"First 4 (GE ZQ)\": \"6591777582-1633934894@g.us\", \"First 4 (GE Edmund)\": \"6591777582-1634111831@g.us\", \"First 4 (Legacy KH)\": \"6591777582-1634192710@g.us\", \"First 4 (AIA Joel)\": \"6591777582-1634706119@g.us\", \"First 4 (IFA Joel)\": \"6591777582-1635059392@g.us\", \"First 4 (AIA Jeston)\": \"6591777582-1635848730@g.us\", \"First 4 (PIAS Victoria)\": \"6591777582-1636095055@g.us\", \"First 4 (AIA Sam & RY)\": \"6591777582-1636095117@g.us\", \"Dynamic control\": \"6591825128-1548148323@g.us\", \"Amelia mini bday picnic \\ue34b\": \"6591834903-1395717603@g.us\", \"Pasir Ris Kidssss\": \"6591834903-1449546960@g.us\", \"First 4 (PRU Alex)\": \"120363019793864742@g.us\", \"Temp. Grp\": \"6591854740-1556580636@g.us\", \"First 4 Website Rafeek\": \"120363040820785756@g.us\", \"First 4 (PFP Herna)\": \"120363023221712398@g.us\", \"Keith in Korea\": \"120363037775787913@g.us\", \"Ernest X Irfan\": \"120363040897377422@g.us\", \"Comms Ball Performance\": \"6592269641-1504253624@g.us\", \"Developer X\": \"120363023654317254@g.us\", \"Starlight \\ud83c\\udf1f Packet 6\": \"6592314119-1498618938@g.us\", \"Developer X Wang Piao\": \"120363020069319239@g.us\", \"Tech Write Proj\": \"6592320817-1536638167@g.us\", \"\\u262c\\u2202\\u0ae8\\u03b1\\u0260\\u03c3\\u0273 \\u03c1\\u2113\\u03b1\\u0442 1 \\u0e23\\u03b5\\u0aee 2\\u262c\": \"6581380035-1524917864@g.us\", \"First 4 (PRU Benadict)\": \"120363038241216195@g.us\", \"Charlie Announcement \\ud83d\\udc31\": \"6592368214-1497666176@g.us\", \"Team \\ue05a\\ue05a\\ue05a\\ue05a\\ue05a\": \"6592382178-1399196195@g.us\", \"31st Jan Floorball 3v3\": \"6592382178-1421633962@g.us\", \"SgFloorball 28 July 2018\": \"6592382178-1529564907@g.us\", \"Kok's \\ud83c\\udf89\": \"6592709565-1484314461@g.us\", \"test5\": \"120363041026905155@g.us\", \"Changi Airport\": \"6592717252-1401171776@g.us\", \"0-00ZM EASTPOINT MALL\": \"6592717252-1401189880@g.us\", \"\\ud83d\\udc09 PCs \\ud83d\\udc09 + 2IC CHEN YAN\": \"6592731105-1505264989@g.us\", \"Bayar fitrah\": \"6581430714-1467528048@g.us\", \"Isaac PFPFA Website\": \"120363041035861591@g.us\", \"Gpmg\": \"6592959401-1528939597@g.us\", \"It's the boys!\": \"6592959401-1532499711@g.us\", \"Algomax\": \"6592964067-1634288085@g.us\", \"SIP \": \"6592989370-1413878922@g.us\", \"Bali Kampung 30/1 - 3/2\": \"6593221641-1572518666@g.us\", \"'D' Coy Pl 4\": \"6593261622-1499293032@g.us\", \"Boboking\": \"6593282627-1488619950@g.us\", \"Queens/Luxi/Muse\": \"6593291190-1481204765@g.us\", \"GovTech-TB 07MAY2019 \\ud83c\\udfc3\\ud83c\\udffb\\u200d\\u2640\\ud83c\\udfc3\\ud83c\\udffb\\ud83c\\udfc3\\ud83c\\udffb\\u200d\\u2640\\ud83c\\udfc3\\ud83c\\udffb\": \"6593364781-1556587391@g.us\", \"RACE Village/Registration\": \"6593364781-1568259005@g.us\", \"15th Sept EngLee WWW\": \"6593364781-1568259493@g.us\", \"First 4 (GE Barbara)\": \"6593655995-1624940714@g.us\", \"First 4 (AIA Benjamin)\": \"6593655995-1625646849@g.us\", \"First 4 (MSA Hazwan)\": \"6593655995-1626259353@g.us\", \"First4 (AIA Michelle)\": \"6593655995-1626348334@g.us\", \"First4 (GE Zihui)\": \"6593655995-1626656246@g.us\", \"First 4 (GE Wei Han)\": \"6593655995-1626686714@g.us\", \"First4 (AIA Nigel)\": \"6593655995-1627021458@g.us\", \"First 4 (GE Benjamin)\": \"6593655995-1627274829@g.us\", \"First 4 (PIAS Winnie)\": \"6593655995-1627282193@g.us\", \"First 4 (GE Glenna)\": \"6593655995-1627885401@g.us\", \"First 4 (GE Josephine)\": \"6593655995-1627895769@g.us\", \"First 4 (GE Nicholas)\": \"6593655995-1627901292@g.us\", \"First 4 (AIA Sebastian)\": \"6593655995-1629177520@g.us\", \"First4 (GE Shi Jie)\": \"6593655995-1632284158@g.us\", \"First4 (AIA Min Khant)\": \"6593655995-1633418878@g.us\", \"Last night of 2020\": \"6593832992-1594013492@g.us\", \"IVP 18/19\": \"6593849950-1546581570@g.us\", \"405\\ue517\\ue517\\ue517\\ue517\\ue517\": \"6593862012-1377488523@g.us\", \"1B/02 with teacher inside\": \"6593862012-1384845189@g.us\", \"amm pbl\": \"6593862012-1405074026@g.us\", \"dream big-fyp\": \"6593862012-1423913925@g.us\", \"hardwell?\": \"6593862012-1430627161@g.us\", \"Mech lab and app project\": \"6593862012-1432260352@g.us\", \"Phuket\": \"6593862012-1451401364@g.us\", \"Job hunter\": \"6593862012-1464150011@g.us\", \"Makan monday\": \"6593862012-1469898737@g.us\", \"Food?\": \"6593862012-1470218893@g.us\", \"33CHARLIE, dunMessComArea\": \"6593862012-1482240732@g.us\", \"Operation Jian bu hao\": \"6593862012-1490988563@g.us\", \"X 9112 6820\": \"120363041050929389@g.us\", \"ROS world championship 18\": \"6593862012-1525340222@g.us\", \"\\ud83d\\ude00\": \"6593862012-1535303913@g.us\", \"Rust\": \"6593862012-1543500837@g.us\", \"Ethics\": \"6593862012-1547448619@g.us\", \"Break Fast?\": \"6593862012-1558356735@g.us\", \"Fuck\": \"6593862012-1558357715@g.us\", \"I love my job\": \"6593862012-1564456612@g.us\", \"Teh teh\": \"6593862012-1570954451@g.us\", \"Lunch time\": \"6593862012-1571025093@g.us\", \"Feb Leadership LUNCH\": \"6593862012-1575865117@g.us\", \"Aloysius and his masters\": \"6593862012-1577149744@g.us\", \"Jj chong lab\": \"6593862012-1582778273@g.us\", \"Caden project\": \"6593862012-1600652379@g.us\", \"Adrian's Project\": \"6593862012-1600655435@g.us\", \"Johnson's old project\": \"6593862012-1600668305@g.us\", \"Adrian You's Project\": \"6593862012-1601380612@g.us\", \"Kieran's Project\": \"6593862012-1602301580@g.us\", \"Dyon's project\": \"6593862012-1603678339@g.us\", \"Yuki's Project\": \"6593862012-1603704113@g.us\", \"Pamela's project\": \"6593862012-1603877667@g.us\", \"Juliana & Fiona's Project\": \"6593862012-1604058154@g.us\", \"Hengyi's project\": \"6593862012-1604114413@g.us\", \"First4 X Chester\": \"6593862012-1610960961@g.us\", \"Pru x First4\": \"6593862012-1611490226@g.us\", \"First4 X Nicholas\": \"6593862012-1611882972@g.us\", \"First 4( AIA Henry )\": \"6593862012-1622796538@g.us\", \"First4 Advertising\": \"6593862012-1623321092@g.us\", \"First 4(PRU Jacky)\": \"6593862012-1623576381@g.us\", \"First4 ( PRU Kevin )\": \"6593862012-1623649847@g.us\", \"FIRST 4 (GE DANNY)\": \"6593862012-1623726332@g.us\", \"First4 Internship\": \"6593862012-1623914821@g.us\", \"First 4 (PRU Ethel & Zen)\": \"6593862012-1624339814@g.us\", \"First4( PRU Janice )\": \"6593862012-1624855160@g.us\", \"First 4 X Paul (PRU EMI)\": \"6593862012-1624869872@g.us\", \"First 4 (PRU Kenley)\": \"6593862012-1624872241@g.us\", \"First 4 (PRU Grace)\": \"6593862012-1624945700@g.us\", \"First 4 (Prop Siew Ling)\": \"6593862012-1629274359@g.us\", \"First 4 Website Alvin\": \"120363039951373853@g.us\", \"Malcolm X F4 Management\": \"6593862012-1630730341@g.us\", \"AAS X First4\": \"6593862012-1631517400@g.us\", \"First4 Creatives\": \"6593862012-1631771793@g.us\", \"0417 24km Safety Team\": \"6581882561-1512447775@g.us\", \"CHARLIE 106/16 PLATOON 3\": \"6593888925-1482485238@g.us\", \"first4marketing delivery\": \"6593899125-1631009384@g.us\", \"DBS Family Day Manpower\": \"6594560151-1464201433@g.us\", \"Dynamic lab\": \"6594564792-1541662459@g.us\", \"First4(PRU)Gary & Adeline\": \"6594599389-1630551530@g.us\", \"Leslie's 21st @ FC\": \"6594761371-1503589319@g.us\", \"25th evening \\ud83d\\ude04\": \"6594894033-1525677144@g.us\", \"H2O \\ud83d\\ude0e\": \"6582180114-1535002649@g.us\", \"Silver surfers\": \"120363038312508862@g.us\", \"BMT Officers 106/16\": \"6582182631-1505085167@g.us\", \"Prodigy 2K18 (24th Nov)\": \"6596176780-1540476571@g.us\", \"OIP Project\": \"6596211512-1556850704@g.us\", \"BAM!\\ud83d\\udca5\": \"6596212081-1463247113@g.us\", \"BAM Part 2\\ud83d\\udca5\\ud83d\\udca5\\ud83d\\udca5\": \"6596212081-1463938844@g.us\", \"COC SFT Ushers\": \"6582182631-1507530112@g.us\", \"First4 (PRU Frost Serena)\": \"6582188286-1628070010@g.us\", \"First4 (PRU MAE)\": \"6582188286-1628485155@g.us\", \"\\ud83c\\udf10 RACE CORE TEAM\": \"6596257941-1569503430@g.us\", \"1\\u20e3 RACE SECTOR 1\": \"6596257941-1569559766@g.us\", \"\\ud83d\\ude91 RACE EMERGENCY - MEDIC\": \"6596257941-1569576370@g.us\", \"Career Development\\ud83d\\ude0e\": \"6596272470-1540352414@g.us\", \"Sapsrokok\": \"6596317040-1546845391@g.us\", \"20%coursework\": \"6596317040-1558166806@g.us\", \"FIRST4 (PRU BENJAMINCHNG)\": \"6582188286-1628515773@g.us\", \"MAE Taiwan OITP Sep 2014\": \"6596369066-1409300640@g.us\", \"\\ud83d\\udc4dTHANK YOU!!!\\ud83d\\udc4d\": \"6596382843-1428908325@g.us\", \"ATTENTION BUDAK PASIR RIS\": \"6596382843-1455630853@g.us\", \"30th July Tamp Greenridge\": \"6596382843-1596006177@g.us\", \"First 4 (AIA Sheron)\": \"120363041169354682@g.us\", \"First 4 Website Jason\": \"120363038351902841@g.us\", \"First 4 (AXA Zhi Hau)\": \"120363022399349824@g.us\", \"MDME IWSP_AY1819\": \"6596413635-1565826343@g.us\", \"\\ud83d\\udeb5\\u200d\\u2640Adventure Club 2019\\ud83d\\udeb4\\u200d\\u2642\": \"6582236935-1536462613@g.us\", \"Degen party !!!\": \"6596413635-1613760170@g.us\", \"First4 (AIA) Shu Ping \": \"6596413635-1625829432@g.us\", \"First4 (Pru) Faiz\": \"6596413635-1625835211@g.us\", \"First4 (AIA) Nicholas \": \"6596413635-1626255899@g.us\", \"First4 (GE) Alan\": \"6596413635-1626864412@g.us\", \"First4 (Pru) Hwee Bing \": \"6596413635-1627273569@g.us\", \"First4 (Pru) Kathy\": \"6596413635-1627363958@g.us\", \"First4(PRU) Melvin & Team\": \"6596413635-1627370898@g.us\", \"First4 (PRU) Clarence\": \"6596413635-1627448119@g.us\", \"First4 (PRU) Shawn\": \"6596413635-1627890960@g.us\", \"First4 (Manulife) Shah\": \"6596413635-1627894022@g.us\", \"First4 (GE) Sharnthinie\": \"6596413635-1627906414@g.us\", \"First4 (Manulife) Hidayat\": \"6596413635-1627907023@g.us\", \"First4 (PRU) Daniel Goh\": \"6596413635-1627907943@g.us\", \"First4 (PRU) Kelvin Lim\": \"6596413635-1628252362@g.us\", \"First4(PRU)Xian Jun/Qi Qi\": \"6596413635-1628670347@g.us\", \"First4 (PRU) Darius \": \"6596413635-1628670567@g.us\", \"First4 (PRU) Griffin\": \"6596413635-1628768408@g.us\", \"First4 (AIA) Dionis\": \"6596413635-1628929696@g.us\", \"First4(PRU)Amanda & Team\": \"6596413635-1629104473@g.us\", \"First4 (PRU) Jun\": \"6596413635-1629791775@g.us\", \"First4 (PRU) Kelvin\": \"6596413635-1629792461@g.us\", \"reference texts\": \"6596413635-1629875227@g.us\", \"First4 (AIA) John Chew\": \"6596413635-1630405924@g.us\", \"First4 (PRU) Joseph\": \"6596413635-1630996644@g.us\", \"First4 (GE) Pei Rong\": \"6596413635-1630997757@g.us\", \"First4 (PRU) Jimmy\": \"6596413635-1631182814@g.us\", \"First4 (PRU) Sean James\": \"6596413635-1631252965@g.us\", \"First4(PRU) Marcus & team\": \"6596413635-1632292190@g.us\", \"First4 (PRU) Aaron \": \"6596413635-1632729207@g.us\", \"First4 (GE) Thomas \": \"6596413635-1632812644@g.us\", \"\\ud83c\\udf1aNight Cycling\\ud83c\\udf1d\": \"6582236935-1537858101@g.us\", \"First4 (PRU) Letitia \": \"6596413635-1633059911@g.us\", \"First4 (PRU) Roystein \": \"6596413635-1633412364@g.us\", \"First4 (PRU) Jason\": \"6596413635-1633506357@g.us\", \"\\u26f0MT FABER HIKE 13 OCT\\u26f0\": \"6582236935-1539229498@g.us\", \"First4 (PRU) Andrea\": \"6596413635-1633938710@g.us\", \"First4 (AIA) Berlin Ng\": \"6596413635-1634018803@g.us\", \"First4 (MFA) Lester\": \"6596413635-1634129224@g.us\", \"Kayak Up North\": \"6582236935-1541320022@g.us\", \"First4 (Manulife) Kai Jie\": \"6596413635-1634131898@g.us\", \"First4 (AXA) Celeste \": \"6596413635-1635150866@g.us\", \"First4 (AIA) Wei Kai \": \"6596413635-1635150977@g.us\", \"First4 x Perry\": \"6596413635-1635769870@g.us\", \"First4 (Legacy) Jalil\": \"120363038577546437@g.us\", \"#againstallodds\": \"6596453185-1446562268@g.us\", \"Irfan X 9112 6820\": \"120363024211486774@g.us\", \"Ray Group Test\": \"120363021634939496@g.us\", \"Melayu floorballers\": \"6596483512-1447502086@g.us\", \"First 4 (AXA Xing Ho)\": \"120363038862143234@g.us\", \"FYP 4.0\": \"6596531166-1429709391@g.us\", \"Hf assignment \": \"6596531166-1453706599@g.us\", \"PH 1h floorball\": \"6596531389-1610179700@g.us\", \"Gathering \\ue418\": \"6596549609-1358164791@g.us\", \"U Sports Teambuilders\": \"6582683879-1536962692@g.us\", \"First 4 (Manulife Abrial)\": \"6596551905-1625042251@g.us\", \"First 4 (AIA Jasline)\": \"6596551905-1625124409@g.us\", \"First 4 (Manulife Danny)\": \"6596551905-1625812523@g.us\", \"First 4 (AXA Jarred)\": \"6596551905-1625827469@g.us\", \"First 4 (GE Hweeshan)\": \"6596551905-1626161045@g.us\", \"First 4 (PRU Hian Keong)\": \"6596551905-1626162614@g.us\", \"First 4 (GE Choon Keng)\": \"6596551905-1626254394@g.us\", \"First 4 (AIA James)\": \"6596551905-1626258561@g.us\", \"First 4 (AIA Bing Chuen)\": \"6596551905-1626418551@g.us\", \"First 4 (AIA John)\": \"6596551905-1626490235@g.us\", \"First 4 (MFA Terrence)\": \"6596551905-1626776510@g.us\", \"First 4 (PIAS Andrew)\": \"6596551905-1626922066@g.us\", \"First 4 (PRU WeiXin)\": \"6596551905-1627041502@g.us\", \"First 4 (PRU Jacky Lim)\": \"6596551905-1627554212@g.us\", \"First 4 (AIA Bryan)\": \"6596551905-1627818856@g.us\", \"First 4 (AIA Derek)\": \"6596551905-1627999971@g.us\", \"First 4 (IAM Julia)\": \"6596551905-1628073863@g.us\", \"First 4 (AIA Eugene)\": \"6596551905-1628082410@g.us\", \"First 4 (PRU Dhiri)\": \"6596551905-1628167776@g.us\", \"First 4 (AIA Colin)\": \"6596551905-1628241114@g.us\", \"First 4 (PRU Anthony)\": \"6596551905-1628664964@g.us\", \"First 4 (PRU Boon)\": \"6596551905-1628748397@g.us\", \"First 4 (PRU Priscilla)\": \"6596551905-1629093088@g.us\", \"First 4 (AXA Jowin)\": \"6596551905-1629197353@g.us\", \"First 4 (PFP Ashley)\": \"6596551905-1629272125@g.us\", \"First 4 (MFA Steven)\": \"6596551905-1629691857@g.us\", \"First 4 (AXA Jonathon)\": \"6596551905-1629703143@g.us\", \"First 4 (PRU Eric Koek)\": \"6596551905-1630913655@g.us\", \"First 4 (AVIVA Shu Hui)\": \"6596551905-1630913708@g.us\", \"First 4 (PRU Hazel)\": \"6596551905-1633001666@g.us\", \"First 4 (AIA Kelvin)\": \"6596551905-1634206486@g.us\", \"First 4 (AIA Alyssa)\": \"6596551905-1634553176@g.us\", \"LTA IRFAN'S FAN CLUB\": \"6596583153-1504331527@g.us\", \"\\ud83d\\udc68\\ud83c\\udffcHOW TO PC 101\": \"6582688355-1493370239@g.us\", \"James's Event Crew \": \"6596603543-1464533080@g.us\", \"First4 Marketing (Don)\": \"6596706604-1619062347@g.us\", \"XO seafood Drivers\": \"120363022569363602@g.us\", \"Ashlyn Birthday Gathering\": \"6596733658-1417839245@g.us\", \"First 4 (Roza AIAFA)\": \"6596747701-1621433729@g.us\", \"First4 (Aviva Sydney)\": \"6596747701-1621919959@g.us\", \"First4 (GE Sean)\": \"6596747701-1621938414@g.us\", \"First4 (AIA Jared)\": \"6596747701-1622035598@g.us\", \"First4 (AXA Ming Xuan)\": \"6596747701-1622103890@g.us\", \"First4 (GE Brian)\": \"6596747701-1622169289@g.us\", \"First4 (AIA Hong Lin)\": \"6596747701-1622552475@g.us\", \"First4 (PFP FA Crystal)\": \"6596747701-1622799189@g.us\", \"First4 (AXA Clarence)\": \"6596747701-1622974280@g.us\", \"First4 (PRU Joel)\": \"6596747701-1623052993@g.us\", \"First4 (IPPFA Alexander)\": \"6596747701-1623149340@g.us\", \"First4 (AIA Candy)\": \"6596747701-1623395221@g.us\", \"First4 (PRU Andy & Van)\": \"6596747701-1623416901@g.us\", \"First4 (PRU Rina & ZY)\": \"6596747701-1623416968@g.us\", \"First4 (PRU Jackson)\": \"6596747701-1623555277@g.us\", \"First4 (PFPFA En Xuan)\": \"6596747701-1623579180@g.us\", \"First4 (PIAS Shyvon)\": \"6596747701-1624004674@g.us\", \"First4 (IAM Dylan's Team)\": \"6596747701-1624014298@g.us\", \"First4 (AIA Eileen)\": \"6596747701-1624603057@g.us\", \"First4 (PIAS Michelle)\": \"6596747701-1624674793@g.us\", \"First4 (Manulife Mervyn)\": \"6596747701-1625197280@g.us\", \"First4 (Manulife Dexter)\": \"6596747701-1625477169@g.us\", \"First4 (GE Dannis)\": \"6596747701-1625722932@g.us\", \"First 4 (AIA Joel Khoo)\": \"120363023560088654@g.us\", \"ICG 2020 FLOORBALL\": \"6596776026-1576068243@g.us\", \"Tug of wars ICG 2020 ENG\": \"6596776026-1578887724@g.us\", \"Glider project\": \"6596782227-1404104869@g.us\", \"MapleSEA\": \"6596782227-1452776232@g.us\", \"TRASHED \\ud83d\\udee2\": \"6596782227-1604058805@g.us\", \"test1\": \"120363020670250620@g.us\", \"floorball bawah block \": \"6596847020-1420549549@g.us\", \"First 4 Website Victor\": \"120363041816811096@g.us\", \"Pokai @ yck, Sunday 11am\": \"6583084674-1432907541@g.us\", \"MME2131 Project\": \"6596971516-1536049791@g.us\", \"floorball 3v3\": \"6583084674-1455539379@g.us\", \"Secret Gaming Chair\": \"6597125683-1512091277@g.us\", \"360dialog broadcast APIs\": \"120363039110705551@g.us\", \"106/16 #btratb\": \"6597235426-1483501963@g.us\", \"#BTRATB (Explicit)\\ud83d\\udc80\\ud83c\\udf1a\": \"6597235426-1484315542@g.us\", \"First4(PRU)Edward\": \"120363039145486338@g.us\", \"Group75\": \"120363039153723983@g.us\", \"Floorball BCH\": \"6597274625-1552921968@g.us\", \"First 4 (AIA Kenny)\": \"120363020867551471@g.us\", \"Platoon 4 - Dragon \\ud83d\\udc09\": \"6583329541-1512639706@g.us\", \"First 4 (PRU ZiHao)\": \"120363020718217055@g.us\", \"First 4 Website Alyssa\": \"120363021942350419@g.us\", \"First4Agency X Aerealm\": \"6583466228-1627543202@g.us\", \"8th Sept - AppVenture TB\": \"6597462072-1567658878@g.us\", \"Floorball freshies 2018\": \"6597508886-1535704006@g.us\", \"CWFR (Order)\": \"6583466228-1629951974@g.us\", \"CWFR (Delivery)\": \"6583466228-1629951993@g.us\", \"\\ud83d\\udd95\\ud83c\\udffb\": \"6597522194-1502384138@g.us\", \"AX5 x First 4\": \"6583992402-1630305328@g.us\", \"MDME Capstone AY19/20\": \"6597631735-1589506556@g.us\", \"Seow bday present \": \"6583992902-1392200336@g.us\", \"First4 (MFA) Matt Chew \": \"120363023858092281@g.us\", \"WORLD CUP \\ue018\": \"6597733712-1402296891@g.us\", \"One\\u26a1\\ufe0ftrike\\ud83c\\udfd1\\ud83d\\udca5\": \"6597799143-1614425741@g.us\", \"AMM3\": \"6597817835-1398218042@g.us\", \"Packet 5\": \"6597826071-1494330906@g.us\", \"PEER MENTOR GGGGGGGGGGGGG\": \"6597829080-1536076183@g.us\", \"Y2MENTEEEEEEEEEEEEEEEEEEE\": \"6597829080-1537369043@g.us\", \"Taylor Swift Concert\": \"6597842401-1388330678@g.us\", \"USS HALLOWEEN\": \"6597842401-1438850653@g.us\", \"Gen Ed's homo group\": \"6597843948-1389751036@g.us\", \"4v4 SG Open June 27\": \"6597860010-1508512804@g.us\", \"Sep 14 Wonderbelles 4v4\": \"6597860010-1563879007@g.us\", \"test2\": \"120363024100758798@g.us\", \"Dota Dota! \": \"6597959956-1411112893@g.us\", \"Ds\": \"6584988875-1454494738@g.us\", \"Developer X JJ\": \"120363042664923763@g.us\", \"Chapalang 3v3 Mar 21/22\": \"6598185094-1421749910@g.us\", \"CAGE\": \"6598194882-1383279138@g.us\", \"\\u6d77\\u5e95\\u635e Hotpot\": \"6598237770-1514267786@g.us\", \"WhatsApp Bots\": \"120363042909525837@g.us\", \"test3\": \"120363042944594424@g.us\", \"RaftUp 19 Oct 9am\": \"6598356039-1539433820@g.us\", \"PFPFA Lynnette Website\": \"120363021086012563@g.us\", \"First4 Leads.\": \"6585332824-1630482573@g.us\", \"Team PIP\": \"6598434828-1534166581@g.us\", \"BMTC Charlie Lads\": \"6586060026-1505720517@g.us\", \"Chop Chop Curry Pok !\": \"6598557545-1481202811@g.us\", \"Test dep Group2\": \"120363039838568657@g.us\", \"First 4 Website Benny\": \"120363043207896969@g.us\", \"ACE interns\": \"6598715267-1548033527@g.us\", \"SIT interns\": \"6598715267-1564981923@g.us\", \"Indians\": \"6598750390-1387882006@g.us\", \"doto\": \"6598750390-1420563001@g.us\", \"Home boys\": \"6598750390-1509290390@g.us\", \"Hi\": \"6598750390-1623737059@g.us\", \"SIT python\": \"6586132599-1570150277@g.us\", \"Hawker Social Media Group\": \"120363039865340730@g.us\", \"Floorball Opportunities\\ud83d\\udc3e\": \"6598994135-1377529041@g.us\", \"\\ud83d\\ude80 Dare 3B/02 \\u2708\": \"6586662632-1366005133@g.us\", \"\\ud83d\\udd27operation dinosaur\\ud83d\\udd29\": \"6586662632-1390314963@g.us\", \"EMIIB PBL\": \"6586662632-1404289032@g.us\", \"Kelvin's DARE 2B/02 \\u2708\\ufe0f\": \"6586662632-1415319647@g.us\", \"Cprog\": \"6586662632-1421083048@g.us\", \"Review,signup,map work\": \"917709377383-1613982723@g.us\", \"Booking 24X7\": \"917838393496-1628979637@g.us\", \"Soby Whatsapp Bot\": \"917851886565-1617879662@g.us\", \"Templates\": \"917851886565-1624460287@g.us\", \"The fresh xo seafood\": \"120363019784511647@g.us\", \"George Group Test 2\": \"120363039904800155@g.us\", \"Bot\": \"918571967928-1596802303@g.us\", \"Entrepreneurship ideas\": \"918571967928-1617202362@g.us\", \"Whatsapp newsletter\": \"918571967928-1623604437@g.us\", \"ITR\": \"918571967928-1624204309@g.us\", \"Jude testing\": \"918571967928-1625587569@g.us\", \"Twilio zoho\": \"918571967928-1633276976@g.us\", \"Wati\": \"15103867539-1621235570@g.us\", \"Foobar\": \"919031819042-1617045523@g.us\", \"Whatsapp automation\": \"15103867539-1632276827@g.us\", \"Esther's project\": \"6587966217-1603252537@g.us\"}"
+				}
+			]
+		},
+		{
+			"name": "add multiple participant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/LENOVO/OneDrive/Desktop/add participants/test.csv"
+						},
+						{
+							"key": "phone",
+							"value": "919834921293",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "143.244.136.108:5006/addingroups",
+					"host": [
+						"143",
+						"244",
+						"136",
+						"108"
+					],
+					"port": "5006",
+					"path": [
+						"addingroups"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add multiple participant",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/LENOVO/OneDrive/Desktop/add participants/test.csv"
+								},
+								{
+									"key": "phone",
+									"value": "919834921293",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "143.244.136.108:5006/addingroups",
+							"host": [
+								"143",
+								"244",
+								"136",
+								"108"
+							],
+							"port": "5006",
+							"path": [
+								"addingroups"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Apr 2022 13:33:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "780"
+						}
+					],
+					"cookie": [],
+					"body": "[\"{\\\"sent\\\":false,\\\"message\\\":\\\"Wrong groupId format. Please use participantChatId from message history. groupId has format 79680123456-1471234567@g.us\\\"}\", \"{\\\"sent\\\":false,\\\"message\\\":\\\"Wrong groupId format. Please use participantChatId from message history. groupId has format 79680123456-1471234567@g.us\\\"}\", \"{\\\"sent\\\":false,\\\"message\\\":\\\"Wrong groupId format. Please use participantChatId from message history. groupId has format 79680123456-1471234567@g.us\\\"}\", \"{\\\"sent\\\":false,\\\"message\\\":\\\"Wrong groupId format. Please use participantChatId from message history. groupId has format 79680123456-1471234567@g.us\\\"}\", \"{\\\"sent\\\":false,\\\"message\\\":\\\"Wrong groupId format. Please use participantChatId from message history. groupId has format 79680123456-1471234567@g.us\\\"}\"]"
+				}
+			]
+		},
+		{
+			"name": "chatid for group",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "143.244.136.108:5006/getchatid/<groupname>",
+					"host": [
+						"143",
+						"244",
+						"136",
+						"108"
+					],
+					"port": "5006",
+					"path": [
+						"getchatid",
+						"<groupname>"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "chatid for group",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "143.244.136.108:5006/getchatid/First 4 Facebook ads",
+							"host": [
+								"143",
+								"244",
+								"136",
+								"108"
+							],
+							"port": "5006",
+							"path": [
+								"getchatid",
+								"First 4 Facebook ads"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 03 Apr 2022 13:35:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						}
+					],
+					"cookie": [],
+					"body": "6591126820-1625983955@g.us"
+				}
+			]
+		},
+		{
+			"name": "single participant single group",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phonenumber\" : \"919834921293\",\r\n    \"group_name\" : \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "143.244.136.108:5006/addparticipant",
+					"host": [
+						"143",
+						"244",
+						"136",
+						"108"
+					],
+					"port": "5006",
+					"path": [
+						"addparticipant"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "single participant single group",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phonenumber\" : \"919834921293\",\r\n    \"group_name\" : \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "143.244.136.108:5006/addparticipant",
+							"host": [
+								"143",
+								"244",
+								"136",
+								"108"
+							],
+							"port": "5006",
+							"path": [
+								"addparticipant"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
