@@ -133,7 +133,7 @@ const Auth = ({ logedIn, setLogedIn }) => {
           <Grid container spacing={2}>
             {isSignup && (
               <>
-                <div className="text-center w-full bg-red-300">
+                <div className="w-full text-center bg-red-300">
                   <h1>This Feature is currently under development</h1>
                 </div>
                 <Input

@@ -21,6 +21,7 @@ const Input = ({
       required
       fullWidth
       label={label}
+      autoComplete={type === "password" ? "off" : undefined}
       autoFocus={autoFocus}
       type={type}
       InputProps={

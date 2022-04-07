@@ -18,6 +18,7 @@ const Home = ({ logedIn, setLogedIn }) => {
   const [bulkPhone, setBulkPhone] = useState(null);
   const [bulkData, setBulkData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [loadBulkData, setLoadBulkData] = useState(true);
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
   // Google captcha State
@@ -90,7 +91,7 @@ const Home = ({ logedIn, setLogedIn }) => {
   const bulkGET = async () => {
     try {
       const response = await axios.get("http://143.244.136.108:5006/allgroups");
-      // setLoading(false);
+      setLoadBulkData(false);
       // console.log(response);
       setDataWhatsApp(response);
     } catch (error) {
@@ -105,7 +106,7 @@ const Home = ({ logedIn, setLogedIn }) => {
   return (
     <>
       <Tab.Group>
-        <Tab.List className="flex justify-between p-[5px] items-center  w-[80%] lg:w-[30%] mx-auto rounded-lg h-[60px] font-black lg:text-lg glasss transition-all duration-300 transform ease-in-out mt-[20px]">
+        <Tab.List className="flex justify-between p-[5px] items-center  w-[95%] lg:w-[60%] mx-auto rounded-lg h-[100px] lg:h-[60px] font-black lg:text-lg glasss transition-all duration-300 transform ease-in-out mt-[20px]">
           <Tab
             className={({ selected }) =>
               ` ${
@@ -125,8 +126,16 @@ const Home = ({ logedIn, setLogedIn }) => {
                   : " text-black"
               } rounded-md h-[50px] p-[10px] flex justify-center items-center w-1/2 font-bold transition-all duration-300 transform ease-linear`
             }
+            disabled={loadBulkData ? true : false}
           >
-            Download Group List
+            {loadBulkData
+              ? (
+                <div className="flex flex-col lg:flex-row justify-center items-center gap-[10px]">
+                  <ClipLoader color="#22c55e" /> 
+                  <h1>Please wait we are fetching data...</h1>
+                </div>
+              )
+              : " Download Group List"}
           </Tab>
         </Tab.List>
         <Tab.Panels>
@@ -227,7 +236,7 @@ const Home = ({ logedIn, setLogedIn }) => {
           {/* ====================================================== */}
           {/* Tab---2 */}
           <Tab.Panel>
-            <ShowData  data={dataWhatsApp}/>
+            <ShowData data={dataWhatsApp} />
           </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
