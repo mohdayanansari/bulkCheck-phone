@@ -53,7 +53,8 @@ const Home = ({ logedIn, setLogedIn }) => {
     // const finalData = formData
 
     try {
-      const url = "http://143.244.136.108:5006/addingroups";
+      
+      const url = "https://krish.notbot.in/addingroups";
       console.log(PhoneValue);
 
       await axios({
@@ -90,7 +91,7 @@ const Home = ({ logedIn, setLogedIn }) => {
   //* Fetching data and making it into csv format:::
   const bulkGET = async () => {
     try {
-      const response = await axios.get("http://143.244.136.108:5006/allgroups");
+      const response = await axios.get("https://krish.notbot.in/allgroups");
       setLoadBulkData(false);
       // console.log(response);
       setDataWhatsApp(response);
